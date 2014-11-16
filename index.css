@@ -1,0 +1,50 @@
+hr{
+border:0;
+border-top:1px solid silver;
+}
+b.mobile, b.other{font-weight:normal}
+.mobile, .other{
+  display: inline-block;
+}
+@media only screen and (min-width: 768px) {
+  /* tablets and desktop */
+  .mobile {
+    display:none;
+  }
+}
+
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+  /* phones */
+  .mobile{
+    display:none;
+  }
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  /* portrait phones */
+  .other{
+    display:none;
+  }
+}
+header{
+  font-family: 'Raleway', sans-serif;
+  border-bottom:1px solid silver;
+  font-size:12em;
+  padding-bottom:0.3em;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
+body h3{
+  font-family: 'Roboto Slab', serif;
+}
+footer{
+  padding-top:0.3em;
+  margin-top:0.3em;
+  border-top: 1px dashed lightsteelblue;
+  font-variant:small-caps;
+  font-style: italic;
+}
+.content{
+
+}
